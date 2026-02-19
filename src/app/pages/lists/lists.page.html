@@ -1,0 +1,27 @@
+<div class="header">
+  <p>Раздел: {{ currentType }}</p>
+  <p>Выбрано пунктов: {{ selectedCount }}</p>
+  <p>Общее значение: {{ totalValue }}</p>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <h3>Меню</h3>
+    <ul>
+      <li (click)="loadType('type1')">Type 1</li>
+      <li (click)="loadType('type2')">Type 2</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Элементы</h2>
+    <div *ngIf="items.length">
+      <div *ngFor="let item of items">
+        <label>
+          <input type="checkbox" [checked]="item.selected" (change)="toggleItem(item)" />
+          {{ item.item }} | Значение: {{ item.value }}
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

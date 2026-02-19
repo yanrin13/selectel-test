@@ -1,0 +1,21 @@
+{
+  "type1": {
+    "items": [
+      { "item": "item1", "value": 70 },
+      { "item": "item2", "value": 15 },
+      { "item": "item3", "value": 40 },
+      { "item": "item4", "value": 30 },
+      { "item": "item5", "value": 25 },
+      { "item": "item6", "value": 8 },
+      { "item": "item7", "value": 100 }
+    ]
+  },
+  "type2": {
+    "items": [
+      { "item": "item1", "value": 101 },
+      { "item": "item2", "value": 51 },
+      { "item": "item3", "value": 200 },
+      { "item": "item4", "value": 38 }
+    ]
+  }
+}
